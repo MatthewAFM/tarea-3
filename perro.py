@@ -1,4 +1,4 @@
-class Perro(Mammal):
+class Dog(Mammal):
     def __init__(self, name: str, type: str, head: Head):
         super().__init__(type)
         self.name = name
@@ -10,8 +10,8 @@ class Perro(Mammal):
     def set_name(self, name: str):
         self.name = name
 
-    def caminar(self):
-        print(f"{self.name} listo para caminar")
+    def go_for_walk(self):
+        print(f"{self.name} caminando")
 
     def get_head(self) -> Head:
         return self.head
